@@ -6,10 +6,6 @@
   <h1>UUID Generator</h1>
 
   <Generator />
-
-  <footer>
-    mtsgi/uuidgen
-  </footer>
 </main>
 
 <style>
@@ -36,11 +32,6 @@
     font-weight: 100;
     line-height: 1.1;
     margin: 0 0 2rem 0;
-  }
-
-  footer {
-    color: var(--text);
-    margin: 0 0 1rem 0;
   }
 
   @media (min-width: 480px) {
