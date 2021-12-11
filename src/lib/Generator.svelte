@@ -7,12 +7,12 @@
 </script>
 
 <button on:click={generate}>
-  Generate { uuids.length }
+  Generate
 </button>
 
 <ul>
-  { #each uuids as uuid }
-    <li>{ uuid }</li>
+  {#each uuids as uuid}
+    <li>{uuid}</li>
   {/each}
 </ul>
 
