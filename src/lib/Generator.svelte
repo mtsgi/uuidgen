@@ -1,8 +1,14 @@
 <script>
+  import Uuid from "./Uuid.svelte";
+
   let uuids = []
   const generate = () => {
-    // @ts-ignore
-    uuids = [...uuids, self.crypto.randomUUID()];
+    try {
+      // @ts-ignore
+      uuids = [...uuids, self.crypto.randomUUID()];
+    } catch (error) {
+      uuids = [...uuids, error];
+    }
   }
 </script>
 
@@ -12,7 +18,7 @@
 
 <ul>
   {#each uuids as uuid}
-    <li>{uuid}</li>
+    <Uuid {uuid} />
   {/each}
 </ul>
 
@@ -37,9 +43,5 @@
   ul {
     padding: 0;
     list-style: none;
-  }
-
-  li {
-    margin: 0 0 0.5rem 0;
   }
 </style>
