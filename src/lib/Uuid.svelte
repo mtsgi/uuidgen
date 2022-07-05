@@ -17,7 +17,8 @@
 <style>
   li {
     padding: 0.5em;
-    border-top:1px solid #eee;
+    transition: var(--transition);
+    border-top:1px solid var(--border);
     display: flex;
     align-items: center;
   }
@@ -28,9 +29,11 @@
     padding: 0;
     flex-grow: 1;
     word-break: break-all;
+    text-overflow: ellipsis;
   }
 
   li > img {
+    transition: var(--transition);
     padding: 0 0.25rem;
     width: 1.5rem;
     height: 1.5rem;
