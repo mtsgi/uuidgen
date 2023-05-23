@@ -29,6 +29,7 @@
     padding: 1em;
     color: var(--theme);
     background-color: var(--sub);
+    transition: var(--transition);
     border-radius: 8px;
     border: 2px solid transparent;
     outline: none;
